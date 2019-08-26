@@ -1,0 +1,25 @@
+  "Default Bookmark Guid" => "A2C75B9F-5710-4496-B6A4-CE70D6D28C1C"
+  "New Bookmarks" => [
+    0 => {
+      "Guid" => "A2C75B9F-5710-4496-B6A4-CE70D6D28C1C"
+      "Horizontal Spacing" => 1
+      "Use Bold Font" => 1
+      "Use Bright Bold" => 1
+      "Use Italic Font" => 1
+      "Use Non-ASCII Font" => 0
+      "Vertical Spacing" => 1
+      "Terminal Type" => "xterm-256color"
+      “"Ambiguous Double Width” => 0
+      “Normal Font” => “MesloLGSNer-Regular 12”
+    }
+  ]
+
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Normal Font" string "MesloLGSNer-Regular 12"' ~/Library/Preferences/com.googlecode.iterm2.plist
+
+plutil -p ~/Library/Preferences/com.googlecode.iterm2.plist | less
+
+defaults read com.googlecode.iterm2 >/dev/null
+
+TERM_PROGRAM=iTerm.app
+TERM=xterm-256color
+TERM_PROGRAM_VERSION=3.3.2
