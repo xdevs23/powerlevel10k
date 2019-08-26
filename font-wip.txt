@@ -1,3 +1,5 @@
+------------------- iTerm
+
   "Default Bookmark Guid" => "A2C75B9F-5710-4496-B6A4-CE70D6D28C1C"
   "New Bookmarks" => [
     0 => {
@@ -20,6 +22,16 @@ plutil -p ~/Library/Preferences/com.googlecode.iterm2.plist | less
 
 defaults read com.googlecode.iterm2 >/dev/null
 
+⌘Q
+
 TERM_PROGRAM=iTerm.app
 TERM=xterm-256color
 TERM_PROGRAM_VERSION=3.3.2
+
+------------ Termux
+
+PREFIX=/data/data/com.termux/files/usr
+
+mkdir -p ~/.termux
+curl -fsSL -o ~/.termux/font.ttf 'https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf'
+termux-reload-settings
