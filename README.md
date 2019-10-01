@@ -340,4 +340,4 @@ This method of installation won't make anything slower or otherwise sub-par.
 ZSH 5.1 or newer should work.
 
 However, there are too many version, OS, platform, terminal and option configurations to test. If
-Powerlevel10k doesn't work for you, please open an issue.
+Powerlevel10k doesn't work for you, please use Arch.
